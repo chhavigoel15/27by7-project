@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Listings</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <script src="script.js"></script> 
+    <header>Software & Services</header>
+    <div class="product-list">
+        <div class="product">
+            <div class="product-info">
+                <img src="https://via.placeholder.com/100" alt="Microsoft Copilot">
+                <div class="product-details">
+                    <h3>Microsoft Copilot</h3>
+                    <p>Microsoft Copilot immediately responds to queries without navigating away from the chat interface.</p>
+                    <p class="price">₹2,500/User/Month</p>
+                </div>
+            </div>
+            <div class="actions">
+                <button onclick="showForm()">Fill Form</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-info">
+                <img src="https://via.placeholder.com/100" alt="Microsoft Bitlocker">
+                <div class="product-details">
+                    <h3>Microsoft Bitlocker</h3>
+                    <p>BitLocker is a security and encryption software to safeguard data.</p>
+                    <p class="price">Price on Request</p>
+                </div>
+            </div>
+            <div class="actions">
+                <button onclick="showForm()">Fill Form</button>
+            </div>
+        </div>
+    </div>
+    <div id="form-section" style="display:none;">
+        <form>
+            <h2>Submit Your Requirements</h2>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Company Name (Optional)">
+            <input type="tel" placeholder="Phone Number" required>
+            <select required>
+                <option value="">Select Type of Solution</option>
+                <option>Cloud Solutions</option>
+                <option>Cyber Security</option>
+                <option>Data Analytics</option>
+                <option>Software Development</option>
+                <option>IT Support</option>
+            </select>
+            <textarea placeholder="Your Requirements" rows="4" required></textarea>
+            <input type="text" placeholder="Budget Range" required>
+            <input type="text" placeholder="Preferred Timeline" required>
+            <input type="file">
+            <button type="submit">Submit</button>
+            <button type="button" onclick="backToList()">Back</button>
+        </form>
+    </div>
+</body>
+</html>
